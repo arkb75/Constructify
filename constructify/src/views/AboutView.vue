@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<template>
+  <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -10,19 +11,19 @@
 
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
 
-		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/law-icons/font/flaticon.css">
+		<link src="../assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" src="../assets/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" src="../assets/fonts/law-icons/font/flaticon.css">
 
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" src="../assets/fonts/fontawesome/css/font-awesome.min.css">
 
 
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" src="../assets/css/slick.css">
+    <link rel="stylesheet" src="../assets/css/slick-theme.css">
 
-    <link rel="stylesheet" href="assets/css/helpers.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/landing-2.css">
+    <link rel="stylesheet" src="../assets/css/helpers.css">
+    <link rel="stylesheet" src="../assets/css/style.css">
+    <link rel="stylesheet" src="../assets/css/landing-2.css">
 	</head>
 	<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
 
@@ -168,7 +169,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mb-5">
-            <img src="assets/images/phone_3.png" alt="Image placeholder" class="img-fluid">
+            <img src="../assets/images/phone_3.png" alt="Image placeholder" class="img-fluid">
           </div>
           <div class="col-lg-8 pl-md-5 pl-sm-0">
             <div class="row">
@@ -228,7 +229,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 order-2">
-            <img src="assets/images/phone_3.png" alt="Image placeholder" class="img-fluid">
+            <img src="../assets/images/phone_3.png" alt="Image placeholder" class="img-fluid">
           </div>
           <div class="col-lg-8 pr-md-5 pr-sm-0 order-1  mb-5">
             <div class="row">
@@ -371,16 +372,16 @@
                 <div class="col-md-6 mx-auto">
                   <div class="pb_slider_nav js-pb_slider_nav2">
                     <div class="author">
-                      <img class="img-fluid rounded-circle" src="assets/images/person_1.jpg" alt="Generic placeholder image">
+                      <img class="img-fluid rounded-circle" src="../assets/images/person_1.jpg" alt="Generic placeholder image">
                     </div>
                     <div class="author">
-                      <img class="img-fluid rounded-circle" src="assets/images/person_5.jpg" alt="Generic placeholder image">
+                      <img class="img-fluid rounded-circle" src="../assets/images/person_5.jpg" alt="Generic placeholder image">
                     </div>
                     <div class="author">
-                      <img class="img-fluid rounded-circle" src="assets/images/person_2.jpg" alt="Generic placeholder image">
+                      <img class="img-fluid rounded-circle" src="../assets/images/person_2.jpg" alt="Generic placeholder image">
                     </div>
                     <div class="author">
-                      <img class="img-fluid rounded-circle" src="assets/images/person_6.jpg" alt="Generic placeholder image">
+                      <img class="img-fluid rounded-circle" src="../assets/images/person_6.jpg" alt="Generic placeholder image">
                     </div>
                   </div>
                 </div>
@@ -492,7 +493,7 @@
       </div>
     </section>
 
-    <section class="pb_xl_py_cover overflow-hidden pb_slant-light pb_gradient_v1 cover-bg-opacity-8"  style="background-image: url(assets/images/1900x1200_img_5.jpg)">
+    <section class="pb_xl_py_cover overflow-hidden pb_slant-light pb_gradient_v1 cover-bg-opacity-8"  style="background-image: url(../assets/images/1900x1200_img_5.jpg)">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-5 justify-content-center">
@@ -559,17 +560,9 @@
 
 
 
-    <script src="assets/js/jquery.min.js"></script>
-
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
-
-    <script src="assets/js/jquery.waypoints.min.js"></script>
-    <script src="assets/js/jquery.easing.1.3.js"></script>
-
-    <script src="assets/js/main.js"></script>
+    
 
 	</body>
 </html>
+
+</template>
