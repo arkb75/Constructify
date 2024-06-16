@@ -1,4 +1,4 @@
-# constructify
+# frontend
 
 ## Project setup
 ```
