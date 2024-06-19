@@ -1,7 +1,7 @@
 <style>
-html{
+/* html{
   scroll-behavior: smooth;
-}
+} */
 .bgimgissue{
   background-image: url(../assets/images/1900x1200_img_5.jpg)
 }
