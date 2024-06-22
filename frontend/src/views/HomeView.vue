@@ -7,9 +7,7 @@
 <style  src="../assets/css/style.css" ></style>
 <style src="../assets/css/landing-2.css"></style>
 <style scoped>
-/* html{
-  scroll-behavior: smooth;
-} */
+
 .bgimgissue{
   background-image: url(../assets/images/1900x1200_img_5.jpg)
 }
