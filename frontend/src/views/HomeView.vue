@@ -50,8 +50,8 @@
             <li class="nav-item"><a class="nav-link" href="#section-features">What we do</a></li>
             <li class="nav-item"><a class="nav-link" href="#section-testimonials">Testimonials</a></li>
             <li class="nav-item"><a class="nav-link" href="#section-faq">FAQ</a></li>
-            <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0"><a class="nav-link"
-                href="https://uicookies.com/" target="_blank"><span class="pb_rounded-4 px-4">Login</span></a>
+            <li @click="handleClick(0)" class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0"><a class="nav-link"
+                ><span class="pb_rounded-4 px-4">Login</span></a>
             </li>
           </ul>
         </div>
@@ -79,23 +79,23 @@
           </div>
           <div class="col-md-5 relative align-self-center">
 
-            <form action="#" class="bg-white rounded pb_form_v1">
+            <form action="#" class="bg-white rounded pb_form_v1" @submit.prevent="handleClick(1)">
               <h2 class="mb-4 mt-0 text-center">Sign Up for Free</h2>
               <div class="form-group">
-                <input type="text" class="form-control pb_height-50 reverse" placeholder="Name">
+                <input type="text" class="form-control pb_height-50 reverse" placeholder="Name" v-model="name">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control pb_height-50 reverse" placeholder="Email">
+                <input type="text" class="form-control pb_height-50 reverse" placeholder="Email" v-model="email">
               </div>
               <div class="form-group">
-                <input type="password" class="form-control pb_height-50 reverse" placeholder="Password">
+                <input type="password" class="form-control pb_height-50 reverse" placeholder="Password" v-model="password">
               </div>
               <div class="form-group">
-                <input type="password" class="form-control pb_height-50 reverse" placeholder="Re-enter Password">
+                <input type="password" class="form-control pb_height-50 reverse" placeholder="Re-enter Password" v-model="re_password">
               </div>
               <div class="form-group">
                 <div class="pb_select-wrap">
-                  <select class="form-control pb_height-50 reverse">
+                  <select class="form-control pb_height-50 reverse" v-model="type">
                     <option value="" selected>Type</option>
                     <option value="">Basic</option>
                     <option value="">Business</option>
@@ -561,23 +561,23 @@
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-5">
-            <form action="#" class="bg-white rounded pb_form_v1">
+            <form action="#" class="bg-white rounded pb_form_v1" @submit.prevent="handleClick(1)">
               <h2 class="mb-4 mt-0 text-center">Sign Up for Free</h2>
               <div class="form-group">
-                <input type="text" class="form-control pb_height-50 reverse" placeholder="Name">
+                <input type="text" class="form-control pb_height-50 reverse" placeholder="Name" v-model="name">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control pb_height-50 reverse" placeholder="Email">
+                <input type="text" class="form-control pb_height-50 reverse" placeholder="Email" v-model="email">
               </div>
               <div class="form-group">
-                <input type="password" class="form-control pb_height-50 reverse" placeholder="Password">
+                <input type="password" class="form-control pb_height-50 reverse" placeholder="Password" v-model="password">
               </div>
               <div class="form-group">
-                <input type="password" class="form-control pb_height-50 reverse" placeholder="Re-enter Password">
+                <input type="password" class="form-control pb_height-50 reverse" placeholder="Re-enter Password" v-model="re_password">
               </div>
               <div class="form-group">
                 <div class="pb_select-wrap">
-                  <select class="form-control pb_height-50 reverse">
+                  <select class="form-control pb_height-50 reverse" v-model="type">
                     <option value="" selected>Type</option>
                     <option value="">Basic</option>
                     <option value="">Business</option>
@@ -640,6 +640,27 @@ export default {
   name: 'HomeView',
   components: {
     
+  },
+  data() {
+    return {
+      name: '',
+      email: '',
+      password: '',
+      re_password: '',
+      type: ''
+    }
+  },
+  methods : {
+    handleClick(button) {
+      switch(button) {
+        case 0:
+          this.$router.push('/login');
+          break;
+        case 1:
+          this.$router.push('/signup');
+          break;
+      }
+    }
   }
 }
 </script>
