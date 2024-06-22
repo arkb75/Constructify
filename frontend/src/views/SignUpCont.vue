@@ -16,17 +16,27 @@
 @import '../assets/css/landing-2.css'; */
 
 
-@import '../assets/fonts/ionicons/css/ionicons.min.css';
-@import '../assets/fonts/fontawesome/css/font-awesome.min.css';
-@import '../assets/css/style.css';
+
 
 /* @font-face {
    } */
-   
+
+
+/* 
+@import '../assets/css/style.css';
+@import '../assets/fonts/fontawesome/css/font-awesome.min.css'; */
+
+html{
+  font-family: "Montserrat", Arial, sans-serif;
+}
 body {
-  background: #007bff;
-  background: linear-gradient(to right, #0062E6, #33AEFF);
-  font-family: 'FontAwesome';
+  /* background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF); */
+
+  background-image: url(../assets/images/signupbg.png);
+  background-repeat: no-repeat;
+  background-size: auto 105%;
+  background-color:rgba(0, 0, 0, 0); 
   
 }
 
@@ -53,6 +63,9 @@ body {
   background-color: #3b5998;
 }
 
+@import '../assets/fonts/ionicons/css/ionicons.min.css';
+@import '../assets/fonts/fontawesome/css/font-awesome.min.css';
+@import '../assets/css/style.css';
 </style>
 
 <template>
@@ -68,8 +81,8 @@ body {
     <meta name="keywords"
       content="Free website templates, Free bootstrap themes, Free template, Free bootstrap, Free website template">
 
-    <!-- <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400"
-      rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400"
+      rel="stylesheet">
 
     
   </head>

@@ -1,4 +1,12 @@
-<style>
+<style src="../assets/css/bootstrap/bootstrap.css" ></style>
+<style src="../assets/fonts/ionicons/css/ionicons.min.css" ></style>
+<style src="../assets/fonts/fontawesome/css/font-awesome.min.css" ></style>
+<style src="../assets/css/slick.css" ></style>
+<style src="../assets/css/slick-theme.css" ></style>
+<style src="../assets/css/helpers.css" ></style>
+<style  src="../assets/css/style.css" ></style>
+<style src="../assets/css/landing-2.css"></style>
+<style scoped>
 /* html{
   scroll-behavior: smooth;
 } */
@@ -6,14 +14,14 @@
   background-image: url(../assets/images/1900x1200_img_5.jpg)
 }
 
-@import '../assets/css/bootstrap/bootstrap.css';
+/* @import '../assets/css/bootstrap/bootstrap.css';
 @import '../assets/fonts/ionicons/css/ionicons.min.css';
 @import '../assets/fonts/fontawesome/css/font-awesome.min.css';
 @import '../assets/css/slick.css';
 @import '../assets/css/slick-theme.css';
 @import '../assets/css/helpers.css';
 @import '../assets/css/style.css';
-@import '../assets/css/landing-2.css';
+@import '../assets/css/landing-2.css'; */
 </style>
 
 <template>
