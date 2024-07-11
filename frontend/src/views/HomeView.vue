@@ -1,15 +1,24 @@
-<style src="../assets/css/bootstrap/bootstrap.css" ></style>
-<style src="../assets/fonts/ionicons/css/ionicons.min.css" ></style>
-<style src="../assets/fonts/fontawesome/css/font-awesome.min.css" ></style>
-<style src="../assets/css/slick.css" ></style>
-<style src="../assets/css/slick-theme.css" ></style>
-<style src="../assets/css/helpers.css" ></style>
-<style  src="../assets/css/style.css" ></style>
+<style src="../assets/css/bootstrap/bootstrap.css"></style>
+<style src="../assets/fonts/ionicons/css/ionicons.min.css"></style>
+<style src="../assets/fonts/fontawesome/css/font-awesome.min.css"></style>
+<style src="../assets/css/slick.css"></style>
+<style src="../assets/css/slick-theme.css"></style>
+<style src="../assets/css/helpers.css"></style>
+<style src="../assets/css/style.css"></style>
 <style src="../assets/css/landing-2.css"></style>
 <style scoped>
-
-.bgimgissue{
+/* .bgimgissue {
   background-image: url(../assets/images/1900x1200_img_5.jpg)
+} */
+
+.logoimg {
+  width: 7%;
+}
+
+.login:hover {
+
+  background-color: limegreen;
+  transition: all 400ms;
 }
 
 /* @import '../assets/css/bootstrap/bootstrap.css';
@@ -30,6 +39,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
     <title>Landing &mdash; Free One Page Bootstrap 4 Template by uicookies.com</title>
     <meta name="description" content="Free Bootstrap 4 Template by uicookies.com">
     <meta name="keywords"
@@ -38,14 +48,18 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400"
       rel="stylesheet">
 
-    
+
   </head>
 
   <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
 
     <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="pb-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Constructify</a>
+        <img src="../assets/logo.png" alt="" class="logoimg ">
+        <a class="navbar-brand" href="index.html">
+
+          onstructify
+        </a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#probootstrap-navbar"
           aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span><i class="ion-navicon"></i></span>
@@ -53,11 +67,11 @@
         <div class="collapse navbar-collapse" id="probootstrap-navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-features">What we do</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-features">What We Do</a></li>
             <li class="nav-item"><a class="nav-link" href="#section-testimonials">Testimonials</a></li>
             <li class="nav-item"><a class="nav-link" href="#section-faq">FAQ</a></li>
-            <li @click="handleClick(0)" class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0"><a class="nav-link"
-                ><span class="pb_rounded-4 px-4">Login</span></a>
+            <li @click="handleClick(0)" class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0"><a
+                class="nav-link "><span class="pb_rounded-4 px-4 login" href="">Login</span></a>
             </li>
           </ul>
         </div>
@@ -76,7 +90,8 @@
           <div class="col-md-6">
             <h2 class="heading mb-3">Build Your Dream Home. With Confidence.</h2>
             <div class="sub-heading">
-              <p class="mb-4">Our user-friendly platform removes the stress from construction, with transparency, ease-of-use, and a network of vetted experts at your fingertips.</p>
+              <p class="mb-4">Our user-friendly platform removes the stress from construction, with transparency,
+                ease-of-use, and a network of vetted experts at your fingertips.</p>
               <!-- <p class="mb-5"><a class="btn btn-success btn-lg pb_btn-pill smoothscroll" href="#section-pricing"><span
                     class="pb_font-14 text-uppercase pb_letter-spacing-1">See Pricing</span></a></p> -->
             </div>
@@ -94,10 +109,12 @@
                 <input type="text" class="form-control pb_height-50 reverse" placeholder="Email" v-model="email">
               </div>
               <div class="form-group">
-                <input type="password" class="form-control pb_height-50 reverse" placeholder="Password" v-model="password">
+                <input type="password" class="form-control pb_height-50 reverse" placeholder="Password"
+                  v-model="password">
               </div>
               <div class="form-group">
-                <input type="password" class="form-control pb_height-50 reverse" placeholder="Re-enter Password" v-model="re_password">
+                <input type="password" class="form-control pb_height-50 reverse" placeholder="Re-enter Password"
+                  v-model="re_password">
               </div>
               <div class="form-group">
                 <div class="pb_select-wrap">
@@ -126,7 +143,8 @@
         <div class="row justify-content-center mb-5">
           <div class="col-md-6 text-center mb-5">
             <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2">
-              <strong>What We Do</strong></h5>
+              <strong>What We Do</strong>
+            </h5>
             <h2>Platform Features</h2>
           </div>
         </div>
@@ -136,7 +154,8 @@
               <div class="pb_icon"><i class="ion-settings pb_icon-gradient"></i></div>
               <div class="media-body">
                 <h5 class="mt-0 mb-3 heading">Manage Your Project</h5>
-                <p class="text-sans-serif">Our user-friendly platform makes managing your construction project a breeze. No prior experience needed!</p>
+                <p class="text-sans-serif">Our user-friendly platform makes managing your construction project a breeze.
+                  No prior experience needed!</p>
               </div>
             </div>
           </div>
@@ -145,7 +164,8 @@
               <div class="pb_icon"><i class="ion-ios-calendar-outline pb_icon-gradient"></i></div>
               <div class="media-body">
                 <h5 class="mt-0 mb-3 heading">Check Status and Updates</h5>
-                <p class="text-sans-serif">Keep everyone on the same page with a shared, interactive project timeline.</p>
+                <p class="text-sans-serif">Keep everyone on the same page with a shared, interactive project timeline.
+                </p>
               </div>
             </div>
           </div>
@@ -154,7 +174,8 @@
               <div class="pb_icon"><i class="ion-cash pb_icon-gradient"></i></div>
               <div class="media-body">
                 <h5 class="mt-0 mb-3 heading">Manage and Negotiate Costs</h5>
-                <p class="text-sans-serif">Maintain complete control over your budget with real-time cost tracking and clear estimates.</p>
+                <p class="text-sans-serif">Maintain complete control over your budget with real-time cost tracking and
+                  clear estimates.</p>
               </div>
             </div>
           </div>
@@ -182,7 +203,8 @@
               <div class="pb_icon"><i class="ion-ios-paperplane-outline pb_icon-gradient"></i></div>
               <div class="media-body">
                 <h5 class="mt-0 mb-3 heading">Peace of Mind</h5>
-                <p class="text-sans-serif">Gain clarity and control with transparent communication and project management tools.</p>
+                <p class="text-sans-serif">Gain clarity and control with transparent communication and project
+                  management tools.</p>
               </div>
             </div>
           </div>
@@ -191,13 +213,14 @@
 
       <br><br>
       <div class="container">
-        
+
         <div class="row">
           <div class="col-md">
             <div class="pb_pricing_v1 p-5 border text-center bg-white">
               <h3>Competitive Prices</h3>
               <!-- <span class="price"><sup>$</sup>19<span>month</span></span> -->
-              <p class="pb_font-15">Access a network of pre-vetted contractors, ensuring you receive the best value for your project.</p>
+              <p class="pb_font-15">Access a network of pre-vetted contractors, ensuring you receive the best value for
+                your project.</p>
               <p class="mb-0"><a href="#" role="button" class="btn btn-primary">Check our list of contractors</a></p>
             </div>
           </div>
@@ -205,8 +228,10 @@
             <div class="pb_pricing_v1 p-5 border text-center bg-white">
               <h3>Pool of <br>Expertise</h3>
               <!-- <span class="price"><sup>$</sup>39<span>month</span></span> -->
-              <p class="pb_font-15">Tap into a network of industry professionals to ensure a smooth and successful build.</p>
-              <p class="mb-0"><a href="#" role="button" class="btn btn-primary btn-shadow-blue">Browse Service Providers</a></p>
+              <p class="pb_font-15">Tap into a network of industry professionals to ensure a smooth and successful
+                build.</p>
+              <p class="mb-0"><a href="#" role="button" class="btn btn-primary btn-shadow-blue">Browse Service
+                  Providers</a></p>
             </div>
           </div>
           <div class="col-md">
@@ -370,7 +395,8 @@
         <div class="row justify-content-center mb-1">
           <div class="col-md-6 text-center mb-5">
             <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2">
-              <strong>Testimonials</strong></h5>
+              <strong>Testimonials</strong>
+            </h5>
             <h2>Good Review From Good People</h2>
           </div>
         </div>
@@ -506,17 +532,21 @@
                   aria-controls="pb_faq1" class="pb_font-22 py-4">What is Constructify?</a>
                 <div id="pb_faq1" class="collapse show" role="tabpanel">
                   <div class="py-3">
-                    <p>Constructify is a user-friendly platform that simplifies and streamlines the homebuilding process. We provide transparency, ease-of-use, and a network of vetted experts to help you build your dream home with confidence.</p>
-                  
+                    <p>Constructify is a user-friendly platform that simplifies and streamlines the homebuilding
+                      process. We provide transparency, ease-of-use, and a network of vetted experts to help you build
+                      your dream home with confidence.</p>
+
                   </div>
                 </div>
               </div>
               <div class="item">
                 <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq2" aria-expanded="false"
-                  aria-controls="pb_faq2" class="pb_font-22 py-4">Is there any experience needed to use Constructify?</a>
+                  aria-controls="pb_faq2" class="pb_font-22 py-4">Is there any experience needed to use
+                  Constructify?</a>
                 <div id="pb_faq2" class="collapse" role="tabpanel">
                   <div class="py-3">
-                    <p>No prior construction experience is required! Our platform is designed to be intuitive and user-friendly, guiding you through each step of the journey.</p>
+                    <p>No prior construction experience is required! Our platform is designed to be intuitive and
+                      user-friendly, guiding you through each step of the journey.</p>
                   </div>
                 </div>
               </div>
@@ -525,16 +555,19 @@
                   aria-controls="pb_faq3" class="pb_font-22 py-4">How does Constructify help me manage my project?</a>
                 <div id="pb_faq3" class="collapse" role="tabpanel">
                   <div class="py-3">
-                    <p>Our platform provides tools for communication with contractors, a centralized project schedule, real-time cost tracking, and easy access to project updates.</p>
+                    <p>Our platform provides tools for communication with contractors, a centralized project schedule,
+                      real-time cost tracking, and easy access to project updates.</p>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq4" aria-expanded="false"
-                  aria-controls="pb_faq4" class="pb_font-22 py-4">How does Constructify ensure the quality of contractors?</a>
+                  aria-controls="pb_faq4" class="pb_font-22 py-4">How does Constructify ensure the quality of
+                  contractors?</a>
                 <div id="pb_faq4" class="collapse" role="tabpanel">
                   <div class="py-3">
-                    <p>We have a rigorous vetting process for all contractors in our network, ensuring they meet our high standards for experience, qualifications, and customer satisfaction.</p>
+                    <p>We have a rigorous vetting process for all contractors in our network, ensuring they meet our
+                      high standards for experience, qualifications, and customer satisfaction.</p>
                   </div>
                 </div>
               </div>
@@ -544,7 +577,9 @@
                   aria-controls="pb_faq5" class="pb_font-22 py-4">Can I choose my own contractor?</a>
                 <div id="pb_faq5" class="collapse" role="tabpanel">
                   <div class="py-3">
-                    <p>Absolutely! While we recommend pre-vetted contractors in our network, you are welcome to use your own licensed and insured contractor. Just make sure to tell them to sign up on our platform as a contractor, it takes less than 2 minutes and is absolutely free!
+                    <p>Absolutely! While we recommend pre-vetted contractors in our network, you are welcome to use your
+                      own licensed and insured contractor. Just make sure to tell them to sign up on our platform as a
+                      contractor, it takes less than 2 minutes and is absolutely free!
                     </p>
                   </div>
                 </div>
@@ -576,10 +611,12 @@
                 <input type="text" class="form-control pb_height-50 reverse" placeholder="Email" v-model="email">
               </div>
               <div class="form-group">
-                <input type="password" class="form-control pb_height-50 reverse" placeholder="Password" v-model="password">
+                <input type="password" class="form-control pb_height-50 reverse" placeholder="Password"
+                  v-model="password">
               </div>
               <div class="form-group">
-                <input type="password" class="form-control pb_height-50 reverse" placeholder="Re-enter Password" v-model="re_password">
+                <input type="password" class="form-control pb_height-50 reverse" placeholder="Re-enter Password"
+                  v-model="re_password">
               </div>
               <div class="form-group">
                 <div class="pb_select-wrap">
@@ -630,7 +667,7 @@
 
 
 
-    
+
 
   </body>
 
@@ -645,7 +682,7 @@
 export default {
   name: 'HomeView',
   components: {
-    
+
   },
   data() {
     return {
@@ -656,9 +693,9 @@ export default {
       type: ''
     }
   },
-  methods : {
+  methods: {
     handleClick(button) {
-      switch(button) {
+      switch (button) {
         case 0:
           this.$router.push('/login');
           break;
@@ -667,8 +704,17 @@ export default {
           break;
       }
     }
+  },
+  mounted: function () {
+    this.$nextTick(function () {
+      
+          setTimeout(function () {
+            if ($('#pb_loader').length > 0) {
+              $('#pb_loader').removeClass('show');
+            }
+          }, 700);
+
+      });
+    }
   }
-}
 </script>
-
-

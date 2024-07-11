@@ -3458,7 +3458,7 @@ input[type="button"].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 9.25rem;
   line-height: inherit;
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
@@ -8249,7 +8249,7 @@ h1, h2, h3, h4, h5,
   -webkit-transition: all 400ms;
   -o-transition: all 400ms;
   transition: all 400ms;
-  opacity: .6; }
+  opacity: 0; }
 
 .form-control:focus + .form-control-placeholder,
 .form-control:valid + .form-control-placeholder {
