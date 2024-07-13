@@ -1,5 +1,6 @@
 import $ from 'jquery';
 
+
 // $(window).on('load pageshow', function () {
 
 //     "use strict";

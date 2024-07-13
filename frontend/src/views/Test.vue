@@ -1,13 +1,8 @@
 <template>
   <div class="container">
     <div class="phases">
-      <Button 
-        v-for="(tab, index) in tabs" 
-        :key="index" 
-        :label="tab.label" 
-        :class="['phase-button', { active: activeTab === index }]" 
-        @click="activeTab = index"
-      />
+      <Button v-for="(tab, index) in tabs" :key="index" :label="tab.label"
+        :class="['phase-button', { active: activeTab === index }]" @click="activeTab = index" />
     </div>
     <div class="content">
       <div class="question">
@@ -18,9 +13,11 @@
         </div>
       </div>
     </div>
-    <div class="steps">
+    <div class="stepper">
       <Steps :model="items" />
     </div>
+
+    
   </div>
 </template>
 
@@ -28,15 +25,30 @@
 import { ref } from 'vue';
 import Button from 'primevue/button';
 import Steps from 'primevue/steps';
-
+import Stepper from 'primevue/stepper';
+import StepperSeparator from 'primevue/stepper'
+import StepList from 'primevue/steplist';
+import StepPanels from 'primevue/steppanels';
+import StepItem from 'primevue/stepitem';
+import Step from 'primevue/step';
+import StepPanel from 'primevue/steppanel';
 export default {
   components: {
     Button,
-    Steps
+    Steps,
+    Stepper,
+    StepperSeparator,
+    StepList,
+    StepPanels,
+    Step,
+    StepPanel,
+    
   },
   setup() {
     const items = ref([
-      { label: 'Financing and property' },
+      { label: 'Financing and property',
+        separator: true
+       },
       { label: 'Architect' },
       { label: 'Project Consultant' },
       { label: 'Interior Designer' },
@@ -44,7 +56,7 @@ export default {
     ]);
 
     const tabs = ref([
-      { label: 'Phase 1' },
+      { label: 'Phase 1'},
       { label: 'Phase 2' },
       { label: 'Phase 3' }
     ]);
