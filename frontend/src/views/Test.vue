@@ -36,18 +36,22 @@ export default {
       { label: 'Review' }
     ]);
     const tabs = ref([
-      { label: 'Phase 1'},
-      { label: 'Phase 2' },
-      { label: 'Phase 3' }
+      { label: 'Phase 1', disabled: false },
+      { label: 'Phase 2', disabled: true },
+      { label: 'Phase 3', disabled: true }
     ]);
     const activeTab = ref(0);
 
     const handleYes = () => {
       console.log('Yes button clicked');
+      // Enable Phase 2 when Yes is clicked
+      tabs.value[1].disabled = false;
     };
 
     const handleNo = () => {
       console.log('No button clicked');
+      // Enable Phase 3 when No is clicked
+      tabs.value[2].disabled = false;
     };
 
     return { items, tabs, activeTab, handleYes, handleNo };

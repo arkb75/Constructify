@@ -4,11 +4,13 @@
         v-for="(tab, index) in tabs"
         :key="index"
         :label="tab.label"
-        :class="['phase-button', { active: activeTab === index }]"
-        @click="$emit('update:activeTab', index)"
+        :class="['phase-button', { active: activeTab === index, disabled: tab.disabled }]"
+        :disabled="tab.disabled"
+        @click="handleClick(index, tab.disabled)"
       />
     </div>
   </template>
+  
   <script>
   import { defineComponent } from 'vue';
   import Button from 'primevue/button';
@@ -25,9 +27,17 @@
         type: Number,
         required: true
       }
+    },
+    methods: {
+      handleClick(index, disabled) {
+        if (!disabled) {
+          this.$emit('update:activeTab', index);
+        }
+      }
     }
   });
   </script>
+  
   <style scoped>
   .phases {
     display: flex;
@@ -64,5 +74,10 @@
     color: white;
     border-radius: 25px;
   }
-  </style>
   
+  .phase-button.disabled {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
+    pointer-events: none;
+  }
+  </style>
