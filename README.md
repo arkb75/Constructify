@@ -35,7 +35,7 @@ For any questions or feedback, please contact:
 
 - Abdul Rafay Khurram
   - Email: [rafay@abdulkhurram.com](mailto:rafay@abdulkhurram.com)
-  - LinkedIn: [arkb](https://www.linkedin.com/in/arkb/)
+  - LinkedIn: [abdulkhurram](https://www.linkedin.com/in/abdulkhurram/)
   - GitHub: [arkb75](https://github.com/arkb75)
 
 - Ali Abdullah Jafri
