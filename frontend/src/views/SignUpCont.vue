@@ -1,30 +1,4 @@
 <style>
-/* html{
-  scroll-behavior: smooth;
-} */
-/* .bgimgissue{
-  background-image: url(../assets/images/1900x1200_img_5.jpg)
-}
-
-@import '../assets/css/bootstrap/bootstrap.css';
-@import '../assets/fonts/ionicons/css/ionicons.min.css';
-@import '../assets/fonts/fontawesome/css/font-awesome.min.css';
-@import '../assets/css/slick.css';
-@import '../assets/css/slick-theme.css';
-@import '../assets/css/helpers.css';
-@import '../assets/css/style.css';
-@import '../assets/css/landing-2.css'; */
-
-
-
-
-/* @font-face {
-   } */
-
-
-/* 
-@import '../assets/css/style.css';
-@import '../assets/fonts/fontawesome/css/font-awesome.min.css'; */
 
 html {
   font-family: "Montserrat", Arial, sans-serif;
@@ -100,6 +74,9 @@ body {
               <!-- Background image for card set in CSS! -->
             </div>
             <div class="card-body p-4 p-sm-5">
+              <div class="absolute top-4 left-4 text-3xl cursor-pointer" @click="goHome" title="Home">
+                <i class="fa fa-arrow-left"></i>
+              </div>
               <h2 class="card-title text-center mb-5 fw-light fs-5">Tell Us More About Yourself</h2>
               <form class="pb-form-v1">
 
@@ -207,6 +184,9 @@ export default {
         x.type = "password";
       }
     },
+    goHome() {
+		  this.$router.push('/');
+	  },
   },
   mounted: function () {
     this.$nextTick(function () {
