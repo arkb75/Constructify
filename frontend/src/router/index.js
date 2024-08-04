@@ -42,6 +42,22 @@ const router = createRouter({
     component: () => import(/* webpackChunkName: "about" */ '../views/Phase 1/FPSelect.vue')
   },
   {
+    path: '/dashboard',
+    name: 'dashboard',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/DashboardView.vue')
+  },
+  {
+    path: '/manage',
+    name: 'manage',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/ManageProjectsView.vue')
+  },
+  {
     path: '/realtor',
     name: 'realtor',
     // route level code-splitting
