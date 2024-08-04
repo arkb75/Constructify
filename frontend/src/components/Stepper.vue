@@ -1,6 +1,6 @@
 <template>
     <div class="stepper">
-      <Steps :model="steps" />
+      <Steps :model="steps" :activeStep="activeTab" />
     </div>
   </template>
   
@@ -15,6 +15,9 @@
       steps: {
         type: Array,
         required: true
+      },
+      activeTab: {
+        type: Number
       }
     }
   });
