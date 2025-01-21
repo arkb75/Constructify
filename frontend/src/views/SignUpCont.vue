@@ -10,8 +10,8 @@ body {
 
   background-image: url(../assets/images/signupbg.png);
   background-repeat: no-repeat;
-  background-size: auto 105%;
-  background-color: rgba(0, 0, 0, 0);
+  background-size: auto 100vh;
+  //background-color: rgba(0, 0, 0, 0);
 
 }
 
