@@ -39,7 +39,7 @@ For any questions or feedback, please contact:
   - GitHub: [arkb75](https://github.com/arkb75)
 
 - Ali Abdullah Jafri
-  - Email: [jafris12345@gmail.com](mailto:jafris12345@gmail.com)
+  - Email: [alijafri0603@gmail.com](mailto:alijafri0603@gmail.com)
   - LinkedIn: [Ali Abdullah Jafri](https://www.linkedin.com/in/ali-abdullah-jafri/)
   - GitHub: [AliAbdullah0314](https://github.com/AliAbdullah0314)
 
